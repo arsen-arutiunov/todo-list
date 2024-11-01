@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy
 from django.views import generic
 
+from todo.forms import TaskForm
 from todo.models import Task, Tag
 
 
@@ -15,11 +16,15 @@ class TaskListView(LoginRequiredMixin, generic.ListView):
 
 class TaskCreateView(LoginRequiredMixin, generic.CreateView):
     model = Task
+    form_class = TaskForm
+    template_name = "todo/task_form.html"
     success_url = reverse_lazy("todo:index")
 
 
 class TaskUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Task
+    form_class = TaskForm
+    template_name = "todo/task_form.html"
     success_url = reverse_lazy("todo:index")
 
 
