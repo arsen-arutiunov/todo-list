@@ -1,0 +1,336 @@
+[
+{
+    "model": "todo.tag",
+    "pk": 1,
+    "fields": {
+        "name": "Work"
+    }
+},
+{
+    "model": "todo.tag",
+    "pk": 2,
+    "fields": {
+        "name": "Personal"
+    }
+},
+{
+    "model": "todo.tag",
+    "pk": 3,
+    "fields": {
+        "name": "Urgent"
+    }
+},
+{
+    "model": "todo.tag",
+    "pk": 4,
+    "fields": {
+        "name": "Shopping"
+    }
+},
+{
+    "model": "todo.tag",
+    "pk": 5,
+    "fields": {
+        "name": "Exercise"
+    }
+},
+{
+    "model": "todo.tag",
+    "pk": 6,
+    "fields": {
+        "name": "Finance"
+    }
+},
+{
+    "model": "todo.tag",
+    "pk": 7,
+    "fields": {
+        "name": "Study"
+    }
+},
+{
+    "model": "todo.tag",
+    "pk": 8,
+    "fields": {
+        "name": "Health"
+    }
+},
+{
+    "model": "todo.tag",
+    "pk": 9,
+    "fields": {
+        "name": "Hobbies"
+    }
+},
+{
+    "model": "todo.tag",
+    "pk": 10,
+    "fields": {
+        "name": "Family"
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 1,
+    "fields": {
+        "content": "Complete project report",
+        "created_at": "2024-01-05T09:15:00Z",
+        "deadline": "2024-01-15T17:00:00Z",
+        "done": false,
+        "tags": [
+            1,
+            3
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 2,
+    "fields": {
+        "content": "Grocery shopping for the week",
+        "created_at": "2024-01-06T10:30:00Z",
+        "deadline": "2024-01-06T15:00:00Z",
+        "done": true,
+        "tags": [
+            4
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 3,
+    "fields": {
+        "content": "Schedule annual health checkup",
+        "created_at": "2024-01-07T11:00:00Z",
+        "deadline": "2024-01-31T10:00:00Z",
+        "done": false,
+        "tags": [
+            8
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 4,
+    "fields": {
+        "content": "Prepare presentation for Monday meeting",
+        "created_at": "2024-01-08T08:45:00Z",
+        "deadline": "2024-01-10T09:00:00Z",
+        "done": false,
+        "tags": [
+            1,
+            3
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 5,
+    "fields": {
+        "content": "Read 20 pages of a new book",
+        "created_at": "2024-01-08T18:20:00Z",
+        "deadline": null,
+        "done": true,
+        "tags": [
+            9
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 6,
+    "fields": {
+        "content": "Monthly budget planning",
+        "created_at": "2024-01-09T14:30:00Z",
+        "deadline": "2024-01-10T18:00:00Z",
+        "done": false,
+        "tags": [
+            6
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 7,
+    "fields": {
+        "content": "Plan family trip itinerary",
+        "created_at": "2024-01-10T12:30:00Z",
+        "deadline": "2024-01-20T12:00:00Z",
+        "done": false,
+        "tags": [
+            10
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 8,
+    "fields": {
+        "content": "Research for upcoming exam",
+        "created_at": "2024-01-11T13:45:00Z",
+        "deadline": "2024-01-25T10:00:00Z",
+        "done": false,
+        "tags": [
+            7
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 9,
+    "fields": {
+        "content": "Go for a 5K run",
+        "created_at": "2024-01-12T07:00:00Z",
+        "deadline": null,
+        "done": true,
+        "tags": [
+            5
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 10,
+    "fields": {
+        "content": "Finish reading technical article",
+        "created_at": "2024-01-13T16:30:00Z",
+        "deadline": null,
+        "done": false,
+        "tags": [
+            1,
+            7
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 11,
+    "fields": {
+        "content": "Organize team meeting for project discussion",
+        "created_at": "2024-02-01T09:00:00Z",
+        "deadline": "2024-02-05T10:00:00Z",
+        "done": false,
+        "tags": [
+            1
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 12,
+    "fields": {
+        "content": "Plan weekend getaway with friends",
+        "created_at": "2024-02-02T18:00:00Z",
+        "deadline": "2024-02-10T18:00:00Z",
+        "done": false,
+        "tags": [
+            2
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 13,
+    "fields": {
+        "content": "Buy gifts for family birthday celebration",
+        "created_at": "2024-02-03T15:30:00Z",
+        "deadline": "2024-02-07T12:00:00Z",
+        "done": false,
+        "tags": [
+            4,
+            10
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 14,
+    "fields": {
+        "content": "Renew gym membership",
+        "created_at": "2024-02-04T09:00:00Z",
+        "deadline": "2024-02-10T10:00:00Z",
+        "done": false,
+        "tags": [
+            5
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 15,
+    "fields": {
+        "content": "Schedule dentist appointment",
+        "created_at": "2024-02-05T14:00:00Z",
+        "deadline": "2024-02-15T10:00:00Z",
+        "done": false,
+        "tags": [
+            8
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 16,
+    "fields": {
+        "content": "Prepare tax documents for filing",
+        "created_at": "2024-02-06T16:45:00Z",
+        "deadline": "2024-03-01T18:00:00Z",
+        "done": false,
+        "tags": [
+            6
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 17,
+    "fields": {
+        "content": "Research online course for skill improvement",
+        "created_at": "2024-02-07T12:00:00Z",
+        "deadline": null,
+        "done": false,
+        "tags": [
+            7
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 18,
+    "fields": {
+        "content": "Organize photo album for last vacation",
+        "created_at": "2024-02-08T19:00:00Z",
+        "deadline": null,
+        "done": false,
+        "tags": [
+            9
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 19,
+    "fields": {
+        "content": "Create a weekly meal plan",
+        "created_at": "2024-02-09T10:30:00Z",
+        "deadline": null,
+        "done": true,
+        "tags": [
+            4
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 20,
+    "fields": {
+        "content": "Organize family photo day",
+        "created_at": "2024-02-10T11:15:00Z",
+        "deadline": "2024-02-20T17:00:00Z",
+        "done": false,
+        "tags": [
+            10
+        ]
+    }
+}
+]
