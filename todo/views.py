@@ -52,3 +52,20 @@ def undo_task(request, task_id):
 class TagListView(LoginRequiredMixin, generic.ListView):
     model = Tag
     context_object_name = "tag_list"
+
+
+class TagCreateView(LoginRequiredMixin, generic.CreateView):
+    model = Tag
+    template_name = "todo/tag_form.html"
+    success_url = reverse_lazy("todo:tags-list")
+
+
+class TagUpdateView(LoginRequiredMixin, generic.UpdateView):
+    model = Tag
+    template_name = "todo/tag_form.html"
+    success_url = reverse_lazy("todo:tags-list")
+
+
+class TagDeleteView(LoginRequiredMixin, generic.DeleteView):
+    model = Tag
+    success_url = reverse_lazy("todo:tags-list")
