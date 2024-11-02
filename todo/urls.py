@@ -6,11 +6,11 @@ from todo.views import (
     TaskCreateView,
     TaskUpdateView,
     TaskDeleteView,
-    complete_task,
-    undo_task,
     TagCreateView,
     TagUpdateView,
-    TagDeleteView
+    TagDeleteView,
+    CompleteTaskView,
+    UndoTaskView
 )
 
 
@@ -24,10 +24,10 @@ urlpatterns = [
          TaskDeleteView.as_view(),
          name="task-delete"),
     path("task/<int:task_id>/complete/",
-         complete_task,
+         CompleteTaskView.as_view(),
          name="task-complete"),
     path("task/<int:task_id>/undo/",
-         undo_task,
+         UndoTaskView.as_view(),
          name="task-undo"),
     path("tags/", TagListView.as_view(), name="tags-list"),
     path("tags/create/", TagCreateView.as_view(), name="tag-create"),

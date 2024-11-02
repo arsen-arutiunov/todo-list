@@ -3,6 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy
 from django.views import generic
+from django.views.generic import View
 
 from todo.forms import TaskForm, TagForm
 from todo.models import Task, Tag
@@ -33,20 +34,20 @@ class TaskDeleteView(LoginRequiredMixin, generic.DeleteView):
     success_url = reverse_lazy("todo:index")
 
 
-@login_required
-def complete_task(request, task_id):
-    task = get_object_or_404(Task, id=task_id)
-    task.done = True
-    task.save()
-    return redirect("todo:index")
+class CompleteTaskView(LoginRequiredMixin, View):
+    def post(self, request, task_id):
+        task = get_object_or_404(Task, id=task_id)
+        task.done = True
+        task.save()
+        return redirect("todo:index")
 
 
-@login_required
-def undo_task(request, task_id):
-    task = get_object_or_404(Task, id=task_id)
-    task.done = False
-    task.save()
-    return redirect('todo:index')
+class UndoTaskView(LoginRequiredMixin, View):
+    def post(self, request, task_id):
+        task = get_object_or_404(Task, id=task_id)
+        task.done = False
+        task.save()
+        return redirect("todo:index")
 
 
 class TagListView(LoginRequiredMixin, generic.ListView):
